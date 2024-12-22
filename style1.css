@@ -1,0 +1,129 @@
+body {
+    background-color: black;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.img {
+    width: 800px;
+    height: 600px;
+    margin: 100px;
+    border: 3px solid white;
+    border-radius: 20px;
+    transition: border-color 0.3s ease;
+}
+
+.login-container {
+    background-color: grey;
+    padding: 20px;
+    border-radius: 20px;
+    width: 300px;
+    border: 3px solid white;
+    transition: border 0.5s ease-in-out;
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 35px;
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-container form input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+
+.login-container form input:hover {
+    background-color: aqua;
+}
+
+.login-container form button {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: 2px solid red;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+}
+
+.login-container form button:hover {
+    background-color: red;
+    border-color: black;
+    box-shadow: 0 0 10px red, 0 0 20px red, 0 0 30px red;
+    animation: rainbow-glow 1.5s infinite;
+}
+
+.login-container .register-link {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.login-container .register-link a {
+    color: blue;
+    text-decoration: none;
+}
+
+.login-container .register-link a:hover {
+    text-decoration: underline;
+}
+
+.cardhead {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-inline: 10px;
+    gap: 8px;
+}
+
+.img:hover {
+    border-color: red;
+}
+
+.login-container:hover {
+    animation: rainbow-glow 1.5s infinite;
+    border: 3px solid transparent;
+    background-image: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+    background-size: 400% 400%;
+}
+
+@keyframes rainbow-glow {
+    0% {
+        box-shadow: 0 0 5px red, 0 0 10px red;
+    }
+    14% {
+        box-shadow: 0 0 5px orange, 0 0 10px orange;
+    }
+    28% {
+        box-shadow: 0 0 5px yellow, 0 0 10px yellow;
+    }
+    42% {
+        box-shadow: 0 0 5px green, 0 0 10px green;
+    }
+    57% {
+        box-shadow: 0 0 5px blue, 0 0 10px blue;
+    }
+    71% {
+        box-shadow: 0 0 5px indigo, 0 0 10px indigo;
+    }
+    85% {
+        box-shadow: 0 0 5px violet, 0 0 10px violet;
+    }
+    100% {
+        box-shadow: 0 0 5px red, 0 0 10px red;
+    }
+}
